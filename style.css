@@ -24,12 +24,90 @@ html {
   }
 /* END SIMPLE CSS RESET */
 
-body {
-    display: flex;
-    justify-content: center;
+/* HELPER STYLES */
+.dark-bg {
+  background-color: #1f2937;
 }
 
 .container {
-    max-width: 960px;
-    border: 1px solid red;
+  display: flex;
+  width: 960px;
+  margin: 0 auto;
+}
+/* END HELPER STYLES */
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  width: 100%;
+}
+
+header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+header .nav .logo {
+  color: #f9faf8;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header .nav ul {
+  display: flex;
+}
+
+header .nav ul li {
+  color: #f9faf8;
+  margin-left: 20px;
+}
+
+header .hero {
+  display: flex;
+  margin: 100px 0;
+}
+
+header .hero .left,
+header .hero .right {
+  width: 50%;
+}
+
+header .hero .left {
+  padding-right: 40px;
+}
+
+header .hero .left h1 {
+  font-size: 48px;
+  color: #f9faf8;
+}
+
+header .hero .left p {
+  font-size: 18px;
+  color: #e5e7eb;
+  margin-bottom: 10px;
+}
+
+header .hero .left button {
+  border: none;
+  padding: 10px 25px;
+  color: #f9faf8;
+  background-color: #3882f6;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+header .hero .right {
+  display: flex;
+  background-color: gray;
+  justify-content: center;
+  align-items: center;
+}
+
+header .hero .right p {
+  color: #f9faf8;
 }

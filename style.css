@@ -6,6 +6,7 @@ html {
   
   *, *:before, *:after {
     box-sizing: inherit;
+    /* outline: 1px solid limegreen; */
   }
   
   body, h1, h2, h3, h4, h5, h6, p, ol, ul {
@@ -39,6 +40,8 @@ html {
 body {
   font-family: "Lato", sans-serif;
 }
+
+/* START HEADER STYLING */
 
 header {
   width: 100%;
@@ -110,4 +113,122 @@ header .hero .right {
 
 header .hero .right p {
   color: #f9faf8;
+}
+
+/* END HEADER STYLING */
+
+/* START INFO STYLING */
+
+.light-bg {
+  background-color: #f9faf8;
+}
+
+.info {
+  width: 100%;
+}
+
+.info h2 {
+  font-size: 36px;
+  font-weight: bold;
+  width: max-content;
+  margin: 40px auto;
+}
+
+.info .cards {
+  display: flex;
+  width: 720px;
+  justify-content: space-around;
+  margin: auto;
+  margin-bottom: 120px;
+}
+
+.info .cards .card {
+  width: 120px;
+}
+
+.info .cards .card .block {
+  height: 120px;
+  width: 120px;
+  margin: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 2px solid #3882f6;
+}
+
+.info .cards .card  p {
+  text-align: center;
+}
+
+/* END INFO STYLING */
+
+/* BEGIN QUOTE STYLING */
+
+.grey-bg {
+  background-color: #e5e7eb;
+}
+
+.quote {
+  width: 720px;
+  margin: 100px auto;
+}
+
+.quote p:nth-of-type(1){
+  font-size: 36px;
+  font-style: italic;
+}
+
+.quote .citation {
+  text-align: right;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* END QUOTE STYLING */
+
+/* BEGIN ACTION STYLING */
+
+.action {
+  display: flex;
+  background-color: #3882f6;
+  width: 100%;
+  justify-content: center;
+  padding: 40px;
+  border-radius: 20px;
+  margin: 80px 0;
+}
+.action .call-action {
+  margin-right: 100px;
+}
+
+.action .call-action span {
+  color: #f9faf8;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.action .call-action p {
+  color: #f9faf8;
+}
+
+.action .sign-up {
+  width: 100px;
+  background-color: #3882f6;
+  color: #f9faf8;
+  border: 3px solid #f9faf8;
+  border-radius: 10px;
+}
+
+/* END ACTION STYLING */
+
+/* BEGIN FOOTER STYLING */
+
+.footer {
+  width: 100%;
+}
+
+.footer p {
+  color: #f9faf8;
+  margin: 40px auto;
+  text-align: center;
 }
